@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodi bd - Delicious Grilled Chicken & More</title>
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- 1. STICKY NAVBAR -->
+    <header class="navbar">
+      <div class="logo-container">
+        <a href="#home" class="logo">
+          <span class="green">Foodi</span> <span class="dark">bd</span>
+        </a>
+      </div>
+
+      <!-- Hamburger toggle for mobile responsive navbar (No JS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Shop</a></li>
+          <li><a href="#reservation">Contact</a></li>
+          <li><a href="#footer">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#menu" class="btn btn-yellow btn-nav">Order Now</a>
+        <a href="#menu" class="cart-icon-btn">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- 2. HERO SECTION -->
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <span class="badge badge-special">Today's Special</span>
+          <h1 class="hero-title">
+            DELICIAS <br>
+            CHICKEN GRILLED
+          </h1>
+          <p class="hero-desc">
+            Secret family recipe are the stuff of legends and Stack burger blend into exceptional.
+          </p>
+
+          <div class="hero-action-row">
+            <a href="#menu" class="btn btn-green btn-order">
+              Order Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="hero-mini-dish">
+              <img src="images/pasta.jpg" alt="Mini Special Dish">
+            </div>
+          </div>
+
+          <div class="download-area">
+            <p class="download-text">For better Service Download Now</p>
+            <div class="download-badges">
+              <a href="#" class="store-badge">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play Store">
+              </a>
+              <a href="#" class="store-badge">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+              </a>
+            </div>
+          </div>
+
+          <div class="rating-area">
+            <div class="avatar-group">
+              <img src="images/customer1.jpg" alt="Customer 1" class="avatar">
+              <img src="images/customer2.jpg" alt="Customer 2" class="avatar">
+              <img src="images/customer3.jpg" alt="Customer 3" class="avatar">
+            </div>
+            <div class="rating-text">
+              <p class="rating-title">Our Happy Customer</p>
+              <div class="rating-stars">
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-val">4.8</span>
+                <span class="rating-reviews">(12.5k Reviews)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-container">
+          <div class="hero-image-wrapper">
+            <img src="images/hero-food.png" alt="Delicias Grilled Chicken" class="hero-food-img">
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 3. SIGNATURE DISHES SECTION -->
+      <section class="dishes" id="menu">
+        <div class="section-header">
+          <div class="header-left">
+            <h2 class="section-title">Our Signature Dishes</h2>
+            <p class="section-subtitle">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.</p>
+          </div>
+        </div>
+
+        <div class="filter-controls-row">
+          <div class="filter-tabs">
+            <button class="filter-tab active">All Flow</button>
+            <button class="filter-tab">Pizza</button>
+            <button class="filter-tab">Burger</button>
+            <button class="filter-tab">Sandwich</button>
+          </div>
+          <div class="carousel-nav">
+            <button class="carousel-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn active"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="dishes-grid">
+          <!-- Card 1: Pasta -->
+          <div class="dish-card">
+            <div class="dish-img-container">
+              <img src="images/pasta.jpg" alt="Pasta" class="dish-img">
+            </div>
+            <div class="dish-info">
+              <h3 class="dish-name">Pasta</h3>
+              <div class="dish-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="dish-desc">Pasta is a staple food of Italian origin made from an unleavened dough.</p>
+              <div class="dish-footer">
+                <span class="dish-price">$25.00</span>
+                <a href="#reservation" class="btn-add-cart">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Chowmein -->
+          <div class="dish-card">
+            <div class="dish-img-container">
+              <img src="images/chowmein.jpg" alt="Chowmein" class="dish-img">
+            </div>
+            <div class="dish-info">
+              <h3 class="dish-name">Chowmein</h3>
+              <div class="dish-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="dish-desc">Pasta is a staple food of Italian origin made from an unleavened dough.</p>
+              <div class="dish-footer">
+                <span class="dish-price">$45.00</span>
+                <a href="#reservation" class="btn-add-cart">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Fish -->
+          <div class="dish-card">
+            <div class="dish-img-container">
+              <img src="images/fish.jpg" alt="Fish" class="dish-img">
+            </div>
+            <div class="dish-info">
+              <h3 class="dish-name">Fish</h3>
+              <div class="dish-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="dish-desc">Pasta is a staple food of Italian origin made from an unleavened dough.</p>
+              <div class="dish-footer">
+                <span class="dish-price">$55.00</span>
+                <a href="#reservation" class="btn-add-cart">ADD TO CART</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 4. WHY CHOOSE US SECTION -->
+      <section class="why-choose-us" id="about">
+        <div class="why-choose-grid">
+          <!-- Left Collage -->
+          <div class="collage-container-left">
+            <div class="collage-grid">
+              <div class="collage-item item-tall-arch">
+                <img src="images/chef1.jpg" alt="Chef Cooking" class="collage-img">
+              </div>
+              <div class="collage-item item-square-top">
+                <img src="images/feature-food2.jpg" alt="Delicious Food Bowl" class="collage-img">
+              </div>
+              <div class="collage-item item-square-bottom">
+                <img src="images/chowmein.jpg" alt="Burger and Fries" class="collage-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="why-choose-content">
+            <h2 class="section-title">What Makes Unique ?</h2>
+            <p class="section-desc">
+              What makes something or someone unique is having distinctive, uncommon qualities or characteristics that set them apart from others.
+            </p>
+
+            <div class="features-icon-grid">
+              <div class="feature-icon-card">
+                <div class="icon-circle icon-orange">
+                  <i class="fa-solid fa-utensils"></i>
+                </div>
+                <p class="feature-card-text">100+ Popular tasty food menu</p>
+              </div>
+
+              <div class="feature-icon-card">
+                <div class="icon-circle icon-yellow">
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+                <p class="feature-card-text">490k+ Satisfied Our Global Customer</p>
+              </div>
+
+              <div class="feature-icon-card">
+                <div class="icon-circle icon-orange">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <p class="feature-card-text">We have 10+ years of experience</p>
+              </div>
+
+              <div class="feature-icon-card">
+                <div class="icon-circle icon-yellow">
+                  <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <p class="feature-card-text">242+ Food items for online orders</p>
+              </div>
+            </div>
+
+            <a href="#features" class="btn btn-green btn-explore">Explore More</a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 5. DINNER PLAN SECTION -->
+      <section class="dinner-plan" id="dinner">
+        <div class="dinner-grid">
+          <div class="dinner-content">
+            <h2 class="section-title">Do you have any dinner plan today?</h2>
+            <p class="section-desc">
+              Place your most important information and primary keywords at the top of the page. This caters to the modern web user's short attention span.
+            </p>
+            <a href="#reservation" class="btn btn-green btn-dinner">Book A Table</a>
+          </div>
+          <div class="dinner-image-container">
+            <div class="dinner-image-wrapper">
+              <img src="images/reservation-food.jpg" alt="Dinner Pasta Plan" class="dinner-food-img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 6. TESTIMONIALS SECTION -->
+      <section class="testimonials" id="testimonials">
+        <div class="testimonials-header-row">
+          <h2 class="section-title">What Our Customer Say?</h2>
+          <div class="carousel-nav">
+            <button class="carousel-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn active"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "The food here is absolutely delicious! Every dish is fresh, full of flavor, and beautifully presented. You can really tell the chefs put love and care."
+            </p>
+            <div class="testimonial-footer">
+              <div class="customer-info-left">
+                <h4 class="customer-name">Jeton Jara</h4>
+                <div class="customer-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="customer-avatar-right">
+                <img src="images/customer1.jpg" alt="Jeton Jara" class="customer-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "The food here is absolutely delicious! Every dish is fresh, full of flavor, and beautifully presented. You can really tell the chefs put love and care."
+            </p>
+            <div class="testimonial-footer">
+              <div class="customer-info-left">
+                <h4 class="customer-name">Sara Javin</h4>
+                <div class="customer-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="customer-avatar-right">
+                <img src="images/customer2.jpg" alt="Sara Javin" class="customer-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "The food here is absolutely delicious! Every dish is fresh, full of flavor, and beautifully presented. You can really tell the chefs put love and care."
+            </p>
+            <div class="testimonial-footer">
+              <div class="customer-info-left">
+                <h4 class="customer-name">Jane Cooper</h4>
+                <div class="customer-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="customer-avatar-right">
+                <img src="images/customer3.jpg" alt="Jane Cooper" class="customer-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 7. FEATURES SECTION -->
+      <section class="features-section" id="features">
+        <div class="features-grid-layout">
+          <!-- Left Content -->
+          <div class="features-content-left">
+            <h2 class="section-title">Key features of Vietnam food include</h2>
+            <p class="section-desc">
+              The world's leading media agency specialized for food photography. It offers rights-managed and royalty-free images and videos from over 1,500 professional photographers.
+            </p>
+
+            <ul class="features-checklist">
+              <li>
+                <span class="check-circle"><i class="fa-solid fa-check"></i></span>
+                Dairy product made from milk
+              </li>
+              <li>
+                <span class="check-circle"><i class="fa-solid fa-check"></i></span>
+                Light and Healthy
+              </li>
+              <li>
+                <span class="check-circle"><i class="fa-solid fa-check"></i></span>
+                Fish and chips
+              </li>
+              <li>
+                <span class="check-circle"><i class="fa-solid fa-check"></i></span>
+                Fried chicken
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Collage -->
+          <div class="collage-container-right">
+            <div class="collage-grid">
+              <div class="collage-item item-tall-arch">
+                <img src="images/feature-food1.jpg" alt="Stack of Pancakes" class="collage-img">
+              </div>
+              <div class="collage-item item-square-top">
+                <img src="images/fish.jpg" alt="Grilled Salmon Fish" class="collage-img">
+              </div>
+              <div class="collage-item item-square-bottom">
+                <img src="images/feature-food2.jpg" alt="Vietnamese Noodle Soup" class="collage-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 8. CHEF TEAM SECTION -->
+      <section class="chef-team" id="chefs">
+        <div class="chef-header-area">
+          <div class="header-text-container">
+            <h2 class="section-title">Meet With Our Chief</h2>
+            <p class="section-desc">
+              Our Chief is a visionary leader who inspires the entire team with dedication, strategic insight, and a passion for excellence. With years of experience and a strong track record of success.
+            </p>
+          </div>
+        </div>
+
+        <div class="chef-body-grid">
+          <!-- Left checklist items -->
+          <div class="chef-checklist-left">
+            <ul class="chef-list">
+              <li>
+                <span class="check-success-circle"><i class="fa-solid fa-check"></i></span>
+                BOLD VISIONARY LEADERSHIP
+              </li>
+              <li>
+                <span class="check-success-circle"><i class="fa-solid fa-check"></i></span>
+                TRUSTED DOMAIN EXPERTISE
+              </li>
+              <li>
+                <span class="check-success-circle"><i class="fa-solid fa-check"></i></span>
+                PEOPLE-CENTERED APPROACH
+              </li>
+              <li>
+                <span class="check-success-circle"><i class="fa-solid fa-check"></i></span>
+                STRATEGIC AND INNOVATIVE THINKING
+              </li>
+              <li>
+                <span class="check-success-circle"><i class="fa-solid fa-check"></i></span>
+                INSPIRATIONAL LEADERSHIP PRESENCE
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Chef Cards -->
+          <div class="chef-cards-right">
+            <div class="chef-card-wrapper">
+              <!-- Chef 1 -->
+              <div class="chef-card">
+                <div class="chef-img-wrapper">
+                  <img src="images/chef1.jpg" alt="Alexander Morgan" class="chef-img">
+                </div>
+                <div class="chef-meta">
+                  <h3 class="chef-name">Alexander Morgan</h3>
+                  <p class="chef-role">Chief Visionary Officer</p>
+                  <div class="chef-socials">
+                    <a href="#" class="social-icon tw"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon ig"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon yt"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="social-icon ln"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon fb"><i class="fa-brands fa-facebook-f"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chef 2 -->
+              <div class="chef-card">
+                <div class="chef-img-wrapper">
+                  <img src="images/chef2.jpg" alt="Sarah Jenkins" class="chef-img">
+                </div>
+                <div class="chef-meta">
+                  <h3 class="chef-name">Chief Operating Officer</h3>
+                  <p class="chef-role">Chief Visionary Officer</p>
+                  <div class="chef-socials">
+                    <a href="#" class="social-icon tw"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon ig"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon yt"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="social-icon ln"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon fb"><i class="fa-brands fa-facebook-f"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="see-all-container">
+              <a href="#chefs" class="see-all-link">See All <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 9. RESERVATION CTA SECTION -->
+      <section class="reservation" id="reservation">
+        <div class="reservation-banner">
+          <div class="reservation-content-left">
+            <h3 class="banner-title">Went to reserve a table?</h3>
+            <p class="banner-desc">
+              Our Chief is a visionary leader who inspires the entire team with dedication, strategic insight, and a passion for excellence. With years of experience and a strong track record of success.
+            </p>
+          </div>
+          <div class="reservation-btn-right">
+            <a href="#reservation" class="btn btn-green btn-banner-action">Book a table</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 10. FOOTER -->
+    <footer class="main-footer" id="footer">
+      <div class="footer-columns">
+        <!-- Col 1 -->
+        <div class="footer-col col-logo">
+          <div class="logo">
+            <span class="green">Foodi</span> <span class="dark">bd</span>
+          </div>
+          <div class="footer-social-row">
+            <a href="#" class="social-circle tw"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-circle ig"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-circle yt"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-circle ln"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-circle fb"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="footer-col">
+          <h4 class="col-title">About For</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Get the App</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Investor Relations</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="footer-col">
+          <h4 class="col-title">Franchising</h4>
+          <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">About the Food Industry</a></li>
+            <li><a href="#">About Franchise</a></li>
+            <li><a href="#">The Opportunity</a></li>
+            <li><a href="#">Research & Analysis</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="footer-col">
+          <h4 class="col-title">Help</h4>
+          <ul>
+            <li><a href="#">Top Recruiting Sites</a></li>
+            <li><a href="#">Salary Survey</a></li>
+            <li><a href="#">Salary Planner</a></li>
+            <li><a href="#">Salary Calculator</a></li>
+            <li><a href="#">Salary Comparison</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
