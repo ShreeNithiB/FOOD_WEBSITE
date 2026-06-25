@@ -6,7 +6,7 @@ This project is a high-fidelity, production-ready recreation of the **Foodi bd**
 
 ---
 
-## 🛠️ Technical Architecture
+## Technical Architecture
 
 ### 1. Zero-JS Interactive Systems
 To satisfy the rule of not using JavaScript, all dynamic UI components are handled natively via CSS:
@@ -22,7 +22,7 @@ To satisfy the rule of not using JavaScript, all dynamic UI components are handl
 
 ---
 
-## 🎨 Visual Identity & Styling Details
+## Visual Identity & Styling Details
 
 The website is designed with a premium, modern food brand aesthetic using custom CSS variables:
 
@@ -38,7 +38,7 @@ The website is designed with a premium, modern food brand aesthetic using custom
 
 ---
 
-## 📐 Custom Shapes & Collage Layouts
+## Custom Shapes & Collage Layouts
 
 To replicate the organic shapes from the mockup, we designed two specific layout structures in CSS:
 
@@ -55,7 +55,7 @@ In the **Why Choose Us** and **Features** sections, three images are grouped in 
 
 ---
 
-## 🗂️ Project Structure
+##Project Structure
 
 The project code is modular, separated cleanly into three main layers:
 
@@ -81,12 +81,12 @@ FOOD WEBSITE/
 
 ---
 
-## 🔗 Navigation Routing Mapping
+##  Navigation Routing Mapping
 
 All action targets and links navigate cleanly to their respective viewport positions using standard CSS section IDs:
 
 * **Navbar Menu**:
-  * `Home` ➡️ `#home`
+  * `Home`  `#home`
   * `About Us` ➡️ `#about`
   * `Shop` ➡️ `#menu`
   * `Contact` ➡️ `#reservation`
